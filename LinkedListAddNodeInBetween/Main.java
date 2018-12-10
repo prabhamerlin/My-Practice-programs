@@ -21,6 +21,7 @@ public class Main
 		int c;
 		System.out.println("1.Add element to front");
 		System.out.println("2.Add element after a node");
+		System.out.println("3.Add element at last");
 		System.out.println("Enter your choice");
 		c = sc.nextInt();
 		switch(c)
@@ -40,6 +41,15 @@ public class Main
 			list.insertInBetween(a, prev,prev.num);
 			System.out.println("List after insertion:");
 			list.display(list.head);
+			break;
+			
+		case 3://to add elements at the last
+			System.out.println("Enter the element to insert:");
+			Node b = new Node(sc.nextInt());
+			list.insertAtlast(b);
+			System.out.println("List after insertion:");
+			list.display(list.head);
+			break;
 		}
 		
 	}

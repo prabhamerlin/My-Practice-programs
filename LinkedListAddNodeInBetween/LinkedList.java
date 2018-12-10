@@ -63,4 +63,14 @@ public class LinkedList
 			a.next = temp;
 		}
 	}
+	
+	public void insertAtlast(Node b)
+	{
+		Node last = head;
+		while(last.next !=null)
+		{
+			last = last.next;
+		}
+		last.next = b;
+	}
 }
